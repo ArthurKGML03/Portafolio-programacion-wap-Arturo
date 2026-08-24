@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700;900&family=Oswald:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+    background-color: #0C1F49;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Apila los elementos de arriba hacia abajo */
+    min-height: 100vh;
+}
+
+.home {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    background-color: #0C1F49;
+    margin: 0;
+    flex: 1;
+}
+
+/*Menu lateral*/
+.menu {
+    background-color: #07152E;
+}
+
+/* El contenedor principal de cada botón */
+.menu-item {
+    display: flex;
+    align-items: center;
+    /* Alinea el número y el bloque de texto verticalmente */
+    padding: 15px 25px;
+    /* Espacio interno para que el hover se vea amplio */
+    text-decoration: none;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+    border-left: 3px solid transparent;
+    /* Preparando el borde para el efecto de selección */
+    height: auto;
+}
+
+/* Efecto al pasar el cursor (Hover) */
+.menu-item:hover {
+    background-color: #15326A;
+    /* Tu color azul táctico */
+    border-left: 3px solid #4a90e2;
+    /* Una línea brillante a la izquierda como en tu STC */
+}
+
+/* El estilo del número */
+.numero {
+    font-size: 14px;
+    color: #8ba7d4;
+    /* Un azul apagado */
+    font-weight: bold;
+    width: 30px;
+    /* Le damos un ancho fijo para que todos los textos empiecen en la misma línea */
+}
+
+/* El contenedor que agrupa los dos textos */
+.texto-grupo {
+    display: flex;
+    flex-direction: column;
+    /* Apila el título sobre el subtítulo */
+}
+
+/* Texto principal */
+.titulo {
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+}
+
+/* Subtítulo pequeño */
+.subtitulo {
+    font-size: 11px;
+    color: #8ba7d4;
+    margin-top: 2px;
+}
+
+/*Fin del menu lateral*/
+/*Contenido principal*/
+.main-content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    background-color: #07152E;
+    margin: 0 5px 0 5px;
+    border: 3px solid #4a90e2;
+    border-top: 0;
+    background: linear-gradient(to right, black, #07152E);
+    align-items: start;
+}
+
+.self-introduction {
+    color: white;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.self-introduction-paragraph {
+    margin: 30px 0;
+}
+
+#p1 {
+    align-self: self-start;
+    margin-top: 5px;
+    color: #4a90e2;
+}
+
+#p2 {
+    font-size: 60px;
+    color: white;
+    font-weight: 600;
+
+}
+
+#p3 {
+    color: #4a90e2;
+    font-size: 60px;
+    font-weight: 600;
+
+}
+
+#p4 {
+    color: #4a90e2;
+
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.profile img {
+
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+/*Fin del contenido principal*/
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    font-family: 'League Spartan', sans-serif;
+    color: #4a90e2;
+    justify-items: center;
+
+}
+
+.services img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    align-items: center;
+    justify-items: center;
+}
+
+/*footer*/
+footer {
+    display: flex;
+    background-color: #07152E;
+    justify-content: center;
+    font-family: 'League Spartan', sans-serif;
+    color: #4a90e2;
+    margin-top: 30px;
+}
+footer a:link{
+    color: #4a90e2;
+}
+footer a:visited{
+    color: white;
+}
+/* El Contenedor del Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    font-family: 'League Spartan', sans-serif;
+    color: white; /* Para que las etiquetas sean visibles en tu fondo oscuro */
+    padding: 20px 0;
+}
+
+/* Campos de entrada */
+form textarea, 
+form input, 
+form label {
+    margin: 10px 0; /* Margen arriba y abajo, 0 a los lados para mantener la alineación */
+}
+
+form input, 
+form textarea {
+    padding: 12px;
+    background-color: #0d1a33; /* Un fondo azul muy oscuro */
+    color: white;
+    border: 2px solid #15326A; /* Un borde sutil base */
+    outline: none;
+    transition: all 0.3s ease; /* Transición suave para el brillo */
+}
+
+/* El área de texto necesita espacio para respirar */
+form textarea {
+    min-height: 120px;
+    resize: vertical; /* Solo permite al usuario estirarlo hacia abajo */
+}
+
+/* El Brillo Táctico al pasar el cursor o hacer clic */
+form textarea:hover, 
+form input:hover,
+form textarea:focus,
+form input:focus {
+    border-color: #4a90e2; 
+    box-shadow: 0 0 10px rgba(74, 144, 226, 0.5); /* Resplandor azul sin alterar el tamaño */
+}
+
+/* El Botón de Disparo */
+form button {
+    width: 30%; /* Ligeramente más ancho para mejor clic */
+    padding: 12px;
+    margin-top: 20px;
+    align-self: center; /* ESTO centra el botón en tu diseño de columna */
+    background-color: #4a90e2;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #ffffff;
+    color: #4a90e2;
+}
+
+/* --- Ritos Visuales del Menú Desplegable --- */
+.p1-dropdown {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+/* El botón principal */
+.p1-dropbtn {
+    background-color: #050d1a; /* Tono oscuro abisal */
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 2px solid #28548a; /* Borde azul táctico */
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/* El contenedor de las opciones (oculto por defecto) */
+.p1-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #030811;
+    min-width: 100%; /* Se adapta al ancho del botón */
+    border: 1px solid #28548a;
+    border-top: none; /* Para que parezca que sale del botón */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.7);
+    z-index: 10;
+}
+
+/* Los enlaces dentro del menú */
+.p1-dropdown-content a {
+    color: #a0b6d4; /* Texto ligeramente atenuado */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 13px;
+    transition: 0.2s ease-in-out;
+}
+
+/* Iluminación al pasar el cursor (Hover) */
+.p1-dropdown-content a:hover {
+    background-color: #28548a;
+    color: #ffffff;
+}
+
+/* Despliegue automático al posar el cursor sobre el contenedor principal */
+.p1-dropdown:hover .p1-dropdown-content {
+    display: block;
+}
+
+/* Brillo táctico en el botón cuando el menú está abierto */
+.p1-dropdown:hover .p1-dropbtn {
+    background-color: #11284b;
+}
+/*fin del footer*/
+/* Oculta todos los registros por defecto al cargar la terminal */
+.registro-activo {
+    display: none;
+}
