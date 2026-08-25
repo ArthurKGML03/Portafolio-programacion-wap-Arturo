@@ -112,18 +112,18 @@
         </div>
         <div class="main-content" id="CONTACT-SCREEN" style="display: none;">
 
-            <div class="self-introduction">
-                <form action="https://formspree.io/f/mrpzwlye" method="post">
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" placeholder="Johndoe@hotmail.com" required>
-                    <label for="message">Leave us a few words:</label>
-                    <textarea name="name="message"" id="text"></textarea>
-                    <button id="Send">Send</button>
-
-
-                </form>
-
-            </div>
+        <div class="self-introduction">
+    <form action="https://formspree.io/f/mrpzwlye" method="POST">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Johndoe@hotmail.com" required>
+        
+        <label for="message">Leave us a few words:</label>
+        <!-- Sintaxis corregida en la línea inferior -->
+        <textarea name="message" id="text" required></textarea>
+        
+        <button type="submit" id="Send">Send</button>
+    </form>
+</div>
             <div class="profile">
             </div>
         </div>
