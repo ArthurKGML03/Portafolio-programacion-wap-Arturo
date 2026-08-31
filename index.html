@@ -1,191 +1,73 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<head lang="en">
+<head>
     <meta charset="UTF-8">
-    <title>Portafolio web</title>
-    <link rel="stylesheet" href="Styles/Styles.css?6">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online portfolio</title>
+    <link rel="Stylesheet" href="Styles.css/Styles.css">
 </head>
 
 <body>
-    <div class="home">
-        <div class="menu">
-            <nav>
-                <a href="#" class="menu-item" onclick="mostrarContenido(event, 'HOME-SCREEN')">
-                    <span class="numero">01</span>
-                    <div class="texto-grupo">
-                        <span class="titulo">HOME</span>
-                        <span class="subtitulo">INICIO</span>
-                    </div>
-                </a>
-
-                <a href="#" class="menu-item" onclick="mostrarContenido(event, 'PROFILE-SCREEN')">
-                    <span class="numero">02</span>
-                    <div class="texto-grupo">
-                        <span class="titulo">PROFILE</span>
-                        <span class="subtitulo">PERFIL</span>
-                    </div>
-                </a>
-
-                <a href="#" class="menu-item" onclick="mostrarContenido(event, 'TECNIC-SCREEN')">
-                    <span class="numero">03</span>
-                    <div class="texto-grupo">
-                        <span class="titulo">TECNIC INFORMATION</span>
-                        <span class="subtitulo">INFORMACION TECNICA</span>
-                    </div>
-                </a>
-
-
-                <a href="#" class="menu-item" onclick="mostrarContenido(event, 'CONTACT-SCREEN')">
-                    <span class="numero">04</span>
-                    <div class="texto-grupo">
-                        <span class="titulo">CONTACT</span>
-                        <span class="subtitulo">CONTACTO</span>
-                    </div>
-                </a>
-                <a href="#" class="menu-item" onclick="mostrarContenido(event, 'P1-SCREEN')">
-                    <span class="numero">05</span>
-                    <div class="texto-grupo">
-                        <span class="titulo">P1</span>
-                        <span class="subtitulo">P1</span>
-                    </div>
-                </a>
-
-
-            </nav>
-        </div>
-
-        <div class="main-content" id="HOME-SCREEN">
-
-            <div class="self-introduction">
-                <p id="p1" class="self-introduction-paragraph">Do whatever you want without harm others.</p>
-                <p id="p2" class="self-introduction-paragraph">Hello, i am</p>
-                <p id="p3" class="self-introduction-paragraph">Arturo.</p>
-                <p id="p4" class="self-introduction-paragraph">CNO lV l Cybersecurity l Universidad Politecica De San
-                    Luis Potosi l 7th semester</p>
-
-                <p>
-                    The main purpose of this digital portfolio is to document and exhibit my technical capabilities and
-                    progress throughout the course.
-                    The core focus of this site revolves around <strong>informatic security, penetration testing, and
-                        vulnerability analysis</strong>.
-                </p>
-                <p>
-                    Beyond a simple repository, this portfolio is of utmost importance as it serves as concrete evidence
-                    of my learning process, demonstrating my practical evolution and understanding of digital defense
-                    mechanisms.
-                </p>
+    <header>
+        <nav class="header">
+            <a href="#about-me">About me</a>
+            <a href="#about-this-web-site">about this web site</a>
+            <a href="#tecnic-information"></a>
+            <a href="#contact">contact</a>
+            <a href="#WAP">WAP</a>
+            <a href="">Github</a>
+        </nav>
+    </header>
+    <main>
+        <h1 class="title">About me</h1>
+        <div id="about-me-content">
+            <div>
+                <p style="font-size: 35px; font-family: Cinzel;">I'm Arturo</p>
+                <p style="font-size: 35px; color: #2563D8; font-family: Cinzel;">an it engineer in formation:</p>
+                <p class="">I am eager to build my technical capabilities throughout
+                    real-world industry experience. My core interests lie in software development,
+                    web applications, hardware maintenance, and cybersecurity.</p>
             </div>
-            <div class="profile">
-                <img id="profile-picture" src="Assets/Arthur.png" alt="Profile picture">
+            <div>
+                <img src="Assets/Arthur.png" alt="">
+
+
             </div>
         </div>
-        <div class="main-content" id="PROFILE-SCREEN" style="display: none;">
-
-            <div class="self-introduction">
-                <h2>Student Profile</h2>
-                <p class="self-introduction-paragraph">
-                    I am an Information Technology Engineering undergraduate student eager to build my technical
-                    capabilities through real-world industry experience. My academic background spans from systems
-                    administration using Linux and programming in multiple languages, to actively preparing for
-                    Jeopardy-style CTF competitions.
-                </p>
-                <p>
-                    My core interests are deeply rooted in <strong>cybersecurity and informatic security</strong>. I am
-                    particularly focused on software development, hardware maintenance, network defense, and conducting
-                    continuous research on emerging technological vulnerabilities.
-                </p>
-            </div>
-            <div class="profile">
-                <img id="profile-picture" src="Assets/Arthur.png" alt="Profile picture">
-
-            </div>
-
+        <h1 class="title">About this web site</h1>
+        <div class="content-section">
+            <p>This portfolio has been made with the main porpose of show my development in different
+                areas such as Cybersecurity, web development and so on.
+            </p>
         </div>
-        <div class="main-content" id="TECNIC-SCREEN" style="display: none;">
-
-            <div class="self-introduction">
-                <p class="self-introduction-paragraph">Frontend: HTML5, CSS3, JS</p>
-                <p class="self-introduction-paragraph">Deployment: GitHub pages</p>
-                <p class="self-introduction-paragraph">Version control: GitHub</p>
-
-
-                
+        <h1 class="title">WAP</h1>
+            <div class="content-section">
+                <ul>
+                    <li><a href="WAPTerm1/Term1.html">Term 1</a></li>
+                    <li><a href="">Term 2</a></li>
+                    <li><a href="">Term 3</a></li>
+                </ul>
 
             </div>
-            <div class="profile">
-            </div>
-        </div>
-        <div class="main-content" id="CONTACT-SCREEN" style="display: none;">
 
-        <div class="self-introduction">
-    <form action="https://formspree.io/f/mrpzwlye" method="POST">
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email" placeholder="Johndoe@hotmail.com" required>
-        
-        <label for="message">Leave us a few words:</label>
-        <!-- Sintaxis corregida en la línea inferior -->
-        <textarea name="message" id="text" required></textarea>
-        
-        <button type="submit" id="Send">Send</button>
-    </form>
-</div>
-            <div class="profile">
-            </div>
-        </div>
-
-        <div class="main-content" id="P1-SCREEN" style="display: none;">
-
-            <!-- Artefacto Desplegable P1 -->
-            <div class="p1-dropdown">
-                <button class="p1-dropbtn">Selecct activity▼</button>
-                <div class="p1-dropdown-content">
-                    <a href="#">ACT 3</a>
-
-                </div>
-            </div>
-            <!-- Zona 1: Presentación (Visible por defecto) -->
-            <div id="act3" class="registro-activo">
-                <div class="self-introduction">
-                    <p></p>
-                </div>
-            </div>
-            <div class="self-introduction">
-                <p class="self-introduction-paragraph"></p>
-            </div>
-            <div class="profile">
-            </div>
+        <h1 class="title">Contact</h1>
+        <div class="content-section">
+            <form class="contact-form" action="">
+                <input type="text" id="name" placeholder="Name: john doe">
+                <input type="email" required placeholder="Email: johndoe@gmail.com">
+                <textarea name="Message" id="message" placeholder="Leave us a message...."></textarea>
+                <button id="submit">Submit</button>
+            </form>
 
         </div>
 
 
-    </div>
-
-
-    </div>
-
-    <div class="services">
-        <div class="service-card">
-            <p>Offered services:</p>
-            <img src="Assets/webd.jpg" alt="">
-        </div>
-        <div class="service-card">
-            <p>Comming soon</p>
-
-
-        </div>
-        <div class="service-card">
-            <p>Comming soon</p>
-
-
-        </div>
-
-    </div>
-
+    </main>
     <footer>
-        <p>Do you have something in mind? <a href="">Contact me</a></p>
 
     </footer>
 
-    <script src="js/script.js"></script>
-
 </body>
+
+</html>
