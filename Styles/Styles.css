@@ -298,3 +298,34 @@ form button:hover {
 .registro-activo {
     display: none;
 }
+
+.tactical-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    background-color: #991b1b; /* Rojo sangre para captar la atención */
+    color: #f8fafc; /* Texto luminoso de alto contraste */
+    font-family: 'Courier New', Courier, monospace; /* Tipografía de terminal */
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none; /* Elimina el subrayado civil estándar */
+    text-transform: uppercase;
+    border: 1px solid #ef4444; /* Marco de contención */
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.tactical-btn:hover {
+    background-color: #dc2626; /* Ignición de los motores del botón */
+    border-color: #fca5a5;
+    box-shadow: 0 0 15px rgba(220, 38, 38, 0.6); /* Resplandor de energía térmica */
+    transform: translateY(-2px); /* Elevación magnética al pasar el cursor */
+}
+
+.tactical-btn:active {
+    transform: translateY(1px); /* Retroceso físico al hacer clic */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
